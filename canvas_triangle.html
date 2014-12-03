@@ -1,0 +1,20 @@
+
+<html>
+<body>
+  <canvas id="the_canvas" width="400" height="400" style="border:1px solid #000000;">></canvas>
+  <input type="button" value="Refresh Page" onClick="window.location.reload()">
+  <script>
+    var canvas = document.getElementById('the_canvas');
+    var ctx = canvas.getContext('2d');
+ 
+    ctx.beginPath();
+    ctx.moveTo(75,50);
+    ctx.lineTo(100,75);
+    ctx.lineTo(50,75);
+    ctx.fill(); 
+
+  </script>
+</body>
+</html>
+
+

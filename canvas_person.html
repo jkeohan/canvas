@@ -1,0 +1,59 @@
+
+<html>
+<body>
+  <canvas id="the_canvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+  <input type="button" value="Refresh Page" onClick="window.location.reload()">
+  <script>
+
+    //alert("hello")
+    var canvas = document.getElementById('the_canvas');
+    var ctx = canvas.getContext('2d');
+ 
+ 	
+/*   //eyes
+    ctx.fillStyle = "green";
+    ctx.arc(180,50,5,0,Math.PI*2,true); 
+    ctx.fill();*/
+
+ 	//head
+    //ctx.beginPath();
+    ctx.fillStyle = "blue";
+    ctx.arc(200,75,50,0,Math.PI*2,true); 
+    ctx.fill();
+
+     //eyes
+    ctx.fillStyle = "green";
+    ctx.arc(180,50,5,0,Math.PI*2,true); 
+    ctx.fill();
+  
+
+     ctx.fillStyle = "black";
+     ctx.fillRect (190, 125, 25, 25);
+    //ctx.fillStyle = "black";
+
+
+     ctx.fillStyle = "blue";
+     ctx.fillRect (150, 150, 100, 200);
+
+     ctx.fillStyle = "blue";
+     ctx.fillRect (50, 175, 100, 10);
+
+     ctx.fillStyle = "blue";
+     ctx.fillRect (250, 175, 100, 10);
+
+    //ctx.fillStyle = "black";
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- //ctx.arc(xposition, yposition, radius, 0, Math.PI*2, true);
+//if you don't know what radius means, just know that a bigger
+//radius will make a bigger circle, and 50 is a good starting point
+ctx.arc(75,75,50,0,Math.PI*2,true); -->
